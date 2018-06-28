@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" placeholder="값을 입력하세요"
+     maxlength="10" id="priceContent">
+    <input type = "button" value ="price" id ="priceBtn">
+  </body>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+    $("#priceBtn").click(function(){
+
+      $.ajax({
+        url:'http://localhost/trans?text',
+        data : {},
+        success:function(response){
+          console.log(response);
+        }
+      });
+    });
+  </script>
+</html>

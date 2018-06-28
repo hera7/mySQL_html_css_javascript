@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" id="price_text">
+    <input type="button" value="확인" id="checkBtn">
+    <div id="area"></div>
+  </body>
+
+  <script src="http://code.jquery.com/jquery-latest.min.js">
+
+  </script>
+  <script>
+  $("#checkBtn").click(function(){
+    $.ajax({
+      url: 'http://localhost/priceTwo?price_text=' + $("#price_text").val(),
+      data{},
+      success:function(response){
+        // $("#area").html(response);
+        // console.log(response);
+      }
+    });
+  })
+
+  </script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  <style>
+      #child1 {
+        left: 100px;
+        top: 100px;
+        position: relative;
+        background-color: yellow;
+
+      }
+      #child2 {
+        left: 100px;
+        top: 100px;
+        position: relative;
+        background-color: red;
+        z-index: 1;
+      }
+      #child1 {
+        left: 100px;
+        top: 100px;
+        position: relative;
+        background-color: blue;
+        z-index: 2;
+      }
+  </style>
+  </head>
+  <body>
+    <div id="child1">yellow</div>
+    <div id="child2">red</div>
+    <div id="child3">blue</div>
+  </body>
+</html>

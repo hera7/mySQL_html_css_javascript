@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+    </style>
+  </head>
+  <body>
+    <input type="text" id="textArea">
+    <input type="text" id="textArea2">
+    <input type="button" id="clickButton" value="button">
+  </body>
+  <script type="text/javascript">
+    var button1 = document.getElementById('clickButton');
+    
+    button1.addEventListener('click',function(){
+      if(Number(document.getElementById('textArea').value)  +
+      Number(document.getElementById('textArea2').value)
+      > 10){
+        console.log("10보다 크다");
+      }
+      else{
+        console.log("10보다 작음");
+      }
+    });
+
+
+
+  </script>
+</html>

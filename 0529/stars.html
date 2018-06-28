@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script type="text/javascript">
+
+
+// 내가 풀어본 거 무한루프 걸림..
+// for(var i=15; 0<i<16; i--){
+// var star4 = "*";
+//   console.log(star4);
+//   for(var j=16; j>i; j--){
+//     console.log(star4);
+//   }
+//   console.log();
+// }
+//
+//
+// for(var i=8; i>0; i--){
+//   star = "";
+//   for(var j=0; j<i*2-1; j++){
+//     star += "*";
+//   }
+//   console.log(star);
+// }
+//
+//
+// for(var i=15; i>0; i = i-2){
+//   star = "";
+//   for(var j=0; j<i; j++){
+//     star += "*";
+//   }
+//   console.log(star);
+// }
+
+// for(var i=0; i<8; i++){
+//   star = "";
+//   for(var j=0; j<15-i*2; j++){
+//     star += "*";
+//   }
+//   console.log(star);
+// }
+
+// 1.
+// for(var i=2; i<1000; i=i*i){
+//   console.log(i);
+// }
+
+// 2.
+// for(var i=0; i<5; i++){
+//   for(j=3; j<i*2; j=j*1+2){
+//     console.log(j);
+//   }
+// }
+
+// 3.
+// for(var i=10; i<22; i=i+3){
+//   console.log(i+"번쨰 loop가 시작");
+//   for(j=i; j<i+2; j=j+3){
+//     console.log(j);
+//   }
+//   console.log(i+"번쨰 loop가 종료");
+// }
+
+
+//
+//
+//
+// // for(var i=0; i<7; i++){
+// //   var star ="*";
+// //   for(var j=0; j<i; j++){
+// //     star +=star;
+// //   }
+// //   console.log(star);
+// // }
+//
+// // for문을 사용해서 arr1, arr2 각각의 배열을
+// // 아래와 같이 만드세요
+//
+// var arr1 = [];
+// var arr2 = [];
+// var arr3 = [];
+// var arr4 = [];
+// var arr5 = [];
+var arr6 = [];
+//
+//
+// for(var i=0; i<100; i++){
+//   arr1[i] = i+1;
+// }
+// console.log(arr1);
+//
+// for(var k=0; k<51; k++){
+//     arr2[k] = k*2;
+// } console.log(arr2);
+//
+// for(var j=1; j<8; j++){
+//   arr3[j-1] = `abc${j}`;
+// } console.log(arr3);
+//
+// for(var h=1; h<10; h++){
+//   arr4[h-1] = 3*h-2;
+// } console.log(arr4);
+//
+// for(var t=2; t<7; t++){
+// arr5[2*t-3] = 4*t-6;
+// } console.log(arr5);
+//
+// //5.선생님 풀이
+// for(var i=1; i<10; i+=2){
+//   arr5[i] = i*2;
+// } console.log(arr5);
+
+// for(var g=1; g<17; g++){
+//   arr6[2*g-2] = 0;
+//   arr6[2*g-3] = 2*g-2;
+// } console.log(arr6);
+// 위에거는 6번째 문제. 해봤는데 틀린거
+
+for(var i=0; i<16; i++){
+  if(i%2!=0){
+    arr6[i]=i*2;
+  }
+  else{
+    arr6[i] = 0;
+  }
+}
+console.log(arr6);
+
+
+
+
+
+
+
+
+
+
+  </script>
+</html>

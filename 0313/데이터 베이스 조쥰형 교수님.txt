@@ -1,0 +1,91 @@
+테이블 스페이스 문구
+
+우리 자료를 저장하는 통이구나 서버의 하드용량의 사이즈도 관리를 하는구나.
+
+테이블스페이스 생성
+
+
+
+creat user : hill
+
+create tablespace jy_user01
+    datafile 'E:\oracle\data\jy_user01_dbf' size 1024m
+    autoextend on next 100m maxsize unlimited
+    segment space management auto;
+
+create tablespace jy_user01
+    datafile 'E:\oracle\data\jy_user01_dbf' size 1024m
+    autoextend on next 100m maxsize unlimited
+    segment space management auto;
+
+    
+ create user hill   
+    identified by hill
+    default tablespace jy_user01
+    temporary tablespace temp;
+    
+ grant connect, resource, dba to hill;
+
+
+
+
+-------------------------------------------------------------
+
+
+heidiSQL 
+
+사용자 : root / 암호 : root
+
+
+Creat  - insert
+Read - select
+Update - 
+Delete - 
+
+
+<테이블 생성>
+
+CREATE Table `news` (
+ `no` INT,
+ `title` VARCHAR(50),
+ `desc` LONGTEXT
+
+만들어진 공간에 데이터를 넣는 거.
+
+alter table `news` change column `title` `title2` varchar(100)
+
+
+전체 선택 f9
+
+선택한 부분만 실행하는 거 ctrl+f9
+
+
+
+
+CREATE Table `news` (
+ `no` INT,
+ `title` VARCHAR(50),
+ `desc` LONGTEXT
+
+)
+
+alter table `news` change column `title` `title2` varchar(100)
+
+drop table `news`
+
+create table `member` (
+	`no` int,
+	`name` varchar(20),
+	`position` varchar(30),
+	`year` int
+	);
+	
+create table `basicsalary` (
+	 `position` varchar(20),
+	 `salary` int
+	);
+	 
+alter table `basicsalary` change column `position` `position` varchar(30); 
+
+alter table `member` change column `name` `name` varchar(40)
+

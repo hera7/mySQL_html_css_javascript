@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <select id="carSelct"/>
+      <option id="hyun" value="0">현대</option>
+      <option id="kia" value="1">기아</option>
+      <option id="ssang" value="2">쌍용</option>
+      <option id="benz" value="3">벤츠</option>
+      <option id="bmw" value="4">bmw</option>
+    </select>
+    <select id="carColor"/>
+      <option id="red" value="0">빨강</option>
+      <option id="blue" value="1">파랑</option>
+      <option id="green" value="2">초록</option>
+      <option id="yellow" value="3">노랑</option>
+      <option id="black" value="4">검정</option>
+    </select>
+    <input type="button" value="견적요청" id="checkBtn">
+    <br>
+    <span id="calculate"></span>
+  </body>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+  $("#checkBtn").click(function(){
+
+    $.ajax({
+      url:'http://localhost/carSelt?carBuying=' + $("#carSelct").val()
+      +'&carselct2=' +$("#carColor").val(),
+      data : {},
+      success:function(response){
+        $("#calculate").html(response);
+        console.log(response);
+      }
+    });
+  });
+  </script>
+</html>

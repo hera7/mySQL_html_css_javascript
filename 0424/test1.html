@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>회원가입</title>
+
+  <style>
+    .memberlogin {
+      text-align: center;
+      font-size: 50px;
+      color: blue;
+    }
+
+    .nameFirst {
+      font-family: Arial;
+      font-style: italic;
+      color: green;
+    }
+
+    .idChk {
+      font-weight: 900;
+      color: blue;
+    }
+
+    .secretNum {
+      color: black;
+      text-shadow: 7px 7px 5px black;
+    }
+
+    .secretNumChk {
+      color: black;
+      text-shadow: 7px 7px 5px black;
+    }
+
+    .eMail {
+      letter-spacing: 0.8em;
+      color: hotpink;
+    }
+
+    #skylight {
+      background: lightblue;
+    }
+
+    .chkNum {
+      font-family: bold;
+      color: purple;
+    }
+
+    .loginCancle {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="memberlogin">회원가입</div><br><br><br>
+
+  <div class="nameFirst">이름<input type="text" name="name"></div><br><br>
+  <div class="idChk">아이디<input type="text" name="id"><input type="button" values="중복확인" maxlength="10"></div><br><br>
+  <div class="secretNum">비밀번호<input type="text" name="pn"></div><br><br>
+  <div class="secretNumChk">비밀번호 확인<input type="text" name="pnchk"></div><br><br>
+  <div class="eMail">이메일 <input type="text" name="emal"></div><br><br> 성별남 남
+  <input type="radio" name="mfm"> 여
+  <input type="radio" name="mfm">
+  <br><br>
+
+  <div id="skylight">휴대폰<select name="telecom" id="telecom">
+    <option value="">skt</option>
+    <option value="">kt</option>
+    <option value="">U+</option>
+    </select>
+    <input type="text" placeholder="휴대폰 번호(-제외)">
+    <input type="button" value="인증번호 받기"></div>
+  <br><br>
+  <div class="chkNum">인증번호<input type="text" name="nchk">
+    <input type="button" value="인증번호 확인"></div><br><br>
+  <br>
+  <br>
+  <br>
+  <div class="loginCancle">
+    <input type="button" value="가입"> <input type="button" value="취소">
+  </div>
+</body>
+
+</html>

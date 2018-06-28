@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" id="num1" >
+    <input type="text" id="num2" >
+    <input type="button" value="확인" id="checkButton">
+  </body>
+  <script type="text/javascript">
+
+  //document.getElementById('num2');
+  var buttonOk = document.getElementById('checkButton');
+  buttonOk.addEventListener('click',function(){
+    var num1 = document.getElementById('num1').value;
+    var num2 = document.getElementById('num2').value;
+    if(Number(num1)+Number(num2) > 10){
+      alert("10보다 큼");
+    }
+  else {
+    alert("10보다 작음");
+  }
+
+});
+
+  </script>
+</html>

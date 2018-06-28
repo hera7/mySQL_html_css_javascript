@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <select id="hi"/>
+      <option id="hello" value="0">안녕하세요</option>
+      <option id="hello2" value="1">반갑습니다</option>
+      <option id="thanks" value="2">감사합니다</option>
+      <option id="sorry" value="3">미안합니다</option>
+      <option id="howMuch" value="4">얼마입니까</option>
+    </select>
+    <br>
+      언어 :
+      <input type="radio" value="0" name="lang" checked="checked"/>영어
+      <input type="radio" value="1" name="lang"/>일어
+      <input type="button" value="번역" id="languaBtn">
+  </body>
+  <script src="http://code.jquery.com/jquery-latest.min.js">
+
+  </script>
+  <script>
+        $("#languaBtn").click(function(){
+
+          $.ajax({
+            url:'http://localhost/trans?abc=' + $("#hi").val()
+            + '&langlang=' + $("input[name="lang"]:checked").val(),
+            data : {},
+            success:function(response){
+              console.log(response);
+            }
+          });
+        });
+  </script>
+</html>

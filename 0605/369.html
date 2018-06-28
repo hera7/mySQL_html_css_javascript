@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script type="text/javascript">
+
+    var str = "짝";
+    for(var i=1; i<151; i++){
+      console.log(i);
+      var strNum = i +"";
+      for(var j=0; j<strNum.length; j++){
+        if(strNum[j]==3 || strNum[j]==6 ||strNum[j]==9){
+          console.log(str);
+        }
+      }
+
+  }
+
+
+// 교수님 풀이
+for(var i=1; i<151; i++){
+  var num = i+"";
+  console.log(num);
+  for(var j=0; j<num.length; j++){
+    if(num[j]%3==0 && num[j]!=0){
+      console.log("짝");
+      break;
+    }
+  }
+}
+
+  </script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script type="text/javascript">
+    // var hello = function(파라미터){
+    //   몸체
+    //   리턴
+    // }
+    // 함수는 나중에 뭔가를 하겠다고 선언하는 것
+    // hello();   ----실행하라는 것,
+    //           ----그 다음줄부터 실행된다.
+
+    var hello = function(a, b){
+      console.log(a);
+      console.log(b);
+      console.log("after return");
+      return "return";
+    }
+
+  var result;
+
+    result = hello(20,10);
+    console.log(result);
+
+//<문제>
+    //두 숫자를 받아서
+    // 더하기, 빼기, 곱하기, 나누기, 제곱승을
+    // 리턴하는 함수 다섯개를 각각 만들고,
+    // 원하는 두 숫자를 넣어 각각의 함수를 실행하고
+    // 그 결과값을 콘솔에 찍어보세요.
+
+var a = 5;
+var b = 5;
+
+var fun_plus = function(a, b){
+  return (a+b);
+}
+
+var result1 =  fun_plus(a,b);
+console.log(result1);
+
+///////////////////////////////////////
+
+var fun_minus = function(a, b){
+
+  return (a-b);
+}
+var result2 =  fun_minus(a,b);
+console.log(result2);
+
+///////////////////////////////////////
+
+var fun_multiple = function(a, b){
+
+  return (a*b);
+}
+var result3 =  fun_multiple(a,b);
+console.log(result3);
+
+///////////////////////////////////////
+
+var fun_slash = function(a, b){
+
+  return (a/b);
+}
+var result4 =  fun_slash(a,b);
+console.log(result4);
+
+///////////////////////////////////////
+
+var fun_2 = function(a, b){
+
+  return (a**b);
+}
+var result5 =  fun_2(a,b);
+console.log(result5);
+
+///////////////////////////////////////
+
+
+
+
+
+
+
+
+  </script>
+</html>

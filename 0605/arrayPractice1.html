@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script type="text/javascript">
+
+    // var array2D = [];
+    // array2D[0] = [];
+    // array2D[1] = [];
+    // array2D[2] = [];
+    //
+    // for(var i=1;i<3; i++){
+    //   for(var j=0; j<10; j++){
+    //     array2D[i][j] = 0;
+    //   }
+    // }
+    // console.log(array2D);
+
+///////////////////////////////////////
+
+          var arr1 = [];
+          var a = 1
+          for(var k=0; k<5; k++){
+            arr1[k]=[];
+            for(var h=0; h<5; h++){
+              arr1[k][h] = a;
+              a++;
+            }
+          }console.log(arr1);
+
+////////////////////////////////////
+
+          var arr2 = [];
+          var num =1;
+          for(var t=0; t<5; t++){
+            arr2[t] = [];
+            for(var m=0; m<5; m++){
+              arr2[t][m] = num;
+              num=num+3;
+            }
+          }console.log(arr2);
+
+////////////////////////////////////////
+
+// 교수님 풀이
+// var arr1 = [];
+// var num = 1;
+// for (var i=0; i<5; i++){
+//   arr1[i] = [];
+//   for(var j=0; j<5; j++){
+//     //방법1
+//     arr1[i][j] = i*5+j+1;
+//
+//     //방법2
+//     arr1[i][j] = num;
+//     num++;
+//     }
+// }console.log(arr1);
+
+///////////////////////////////////////////
+
+var arr3 = [];
+var num3 = 0;
+for(var i=0; i<5; i++){
+  arr3[i] = [];
+  for(var j=0; j<5; j++){
+
+    arr3[i][j] = i*j;
+
+  }
+}console.log(arr3);
+
+//////////////////////////////////////
+
+var arr4 = [];
+
+for(var i=0; i<5; i++){
+  arr4[i] = [];
+  for(var j=0; j<5; j++){
+
+    arr4[i][j] = ""+i+j;
+
+  }
+}console.log(arr4);
+
+
+
+          </script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="button" value="request1" id="ajaxBtn1">
+    <input type="button" value="request2" id="ajaxBtn2">
+    <input type="button" value="request3" id="ajaxBtn3">
+  </body>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+    $("#ajaxBtn1").click(function(){
+
+      $.ajax({
+        url:'http://localhost/request1',
+        data : {},
+        success:function(response1){
+          console.log(response1);
+        }
+      });
+    });
+
+    $("#ajaxBtn2").click(function(){
+
+      $.ajax({
+        url:'http://localhost/request2',
+        data : {},
+        success:function(response2){
+          console.log(response2);
+        }
+      });
+    });
+
+    $("#ajaxBtn3").click(function(){
+
+      $.ajax({
+        url:'http://localhost/request3',
+        data : {},
+        success:function(response3){
+          console.log(response3);
+        }
+      });
+    });
+  </script>
+</html>
